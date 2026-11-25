@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">KIDEST logo</title>
+  <desc id="desc">A neon gradient circuit-style letter K above the word KIDEST.</desc>
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ee72d8"/>
+      <stop offset="0.52" stop-color="#b78bea"/>
+      <stop offset="1" stop-color="#76a9f5"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Circuit-inspired K outline -->
+  <g fill="none" stroke="url(#neon)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M302 574 V340 Q302 315 327 315 H354 Q376 315 376 338 V466
+             Q376 482 390 469 L507 342 Q524 324 545 324 H565 Q584 324 571 343
+             L427 482 Q413 496 428 512 L570 653 Q587 671 565 671 H532
+             Q511 671 495 654 L389 545 Q376 531 376 551 V566 Q376 590 352 590 H326 Q302 590 302 574 Z"
+          stroke-width="17"/>
+    <path d="M319 558 V345 Q319 332 332 332 H350 Q359 332 359 343 V489
+             Q359 504 373 504 Q383 504 394 493 L517 359 Q526 349 540 349 H548
+             L414 478 Q389 502 414 527 L548 654 H537 Q524 654 511 641 L400 528
+             Q375 503 359 527 V562 Q359 573 348 573 H333 Q319 573 319 558 Z"
+          stroke-width="3.5" opacity=".95"/>
+  </g>
+
+  <!-- Circuit branches and terminals -->
+  <g fill="none" stroke="url(#neon)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M319 450 L350 420 V376" stroke-width="8"/>
+    <path d="M392 487 L442 438 L457 423" stroke-width="8"/>
+    <path d="M319 550 L345 524" stroke-width="8"/>
+    <circle cx="350" cy="369" r="13" stroke-width="8"/>
+    <circle cx="461" cy="416" r="12" stroke-width="8"/>
+    <circle cx="323" cy="559" r="12" stroke-width="8"/>
+  </g>
+  <g fill="#fbf8fc" stroke="url(#neon)" stroke-width="4">
+    <circle cx="350" cy="369" r="5"/>
+    <circle cx="461" cy="416" r="4.5"/>
+    <circle cx="323" cy="559" r="4.5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="512" y="790" text-anchor="middle" fill="url(#neon)"
+        font-family="Montserrat, Poppins, Arial, sans-serif" font-size="112"
+        font-weight="300" letter-spacing="7">KIDEST</text>
+</svg>

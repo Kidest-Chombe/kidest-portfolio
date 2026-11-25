@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">KIDEST logo</title>
+  <desc id="desc">A pink, purple, and blue gradient circuit-board letter K followed by the word KIDEST.</desc>
+  <defs>
+    <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EE72D8"/>
+      <stop offset="0.52" stop-color="#B78BEA"/>
+      <stop offset="1" stop-color="#76A9F5"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Circuit-inspired K symbol -->
+  <g fill="none" stroke="url(#brandGradient)" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+    <!-- Outer K structure -->
+    <path d="M76 48 H145 Q164 48 164 67 V293 Q164 312 145 312 H76 Q57 312 57 293 V67 Q57 48 76 48Z" stroke-width="13"/>
+    <path d="M164 178 L307 48 Q322 35 337 49 Q350 62 336 77 L237 174 Q225 186 237 198 L337 283 Q352 296 338 310 Q324 324 309 311 L164 190" stroke-width="13"/>
+    <!-- Inner circuit traces -->
+    <path d="M93 83 V155 L76 172" stroke-width="8"/>
+    <path d="M93 276 V220 Q93 204 105 193 L255 58" stroke-width="8"/>
+    <path d="M93 220 L151 220 L276 103" stroke-width="8"/>
+    <!-- Circuit nodes -->
+    <g stroke-width="7">
+      <circle cx="93" cy="83" r="13" fill="#fff"/>
+      <circle cx="93" cy="276" r="13" fill="#fff"/>
+      <circle cx="276" cy="103" r="13" fill="#fff"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="405" y="225" fill="url(#brandGradient)"
+        font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="500"
+        letter-spacing="7">KIDEST</text>
+</svg>

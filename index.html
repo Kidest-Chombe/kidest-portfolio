@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidest's Portfolio</title>
+    <meta name="description" content="Personal portfolio of Kidest Chombe, a Computer Science graduate and frontend developer.">
+    <meta name="author" content="Kidest Chombe">
+    <meta name="theme-color" content="#6c3ce9">
+
+    <meta property="og:title" content="Kidest's Portfolio">
+    <meta property="og:description" content="Explore my skills, projects and experience.">
+    <meta property="og:image" content="https://your-site.vercel.app/images/preview.png">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"> <!--/for the image on the tab-->
+
+    <link rel="stylesheet" href="style.css"> <!--external-css-->
+
+   <!--internal-CSS-->
+    <style>
+        .note {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+
+    <!--external-js-->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="kidest-horizontal-logo.svg" alt="Kidest Chombe Logo" class="logo" width="344" height="74">
+        </div>
+
+        <div class="header-actions">
+            <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <nav id="main-nav" class="nav-drawer" aria-label="Main Navigation">
+            <div class="drawer-header">
+                <span class="drawer-title">Menu</span>
+            </div>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overlay backdrop for Mobile Aside -->
+        <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    </header>
+
+
+
+    <main>
+        <section class="hero">
+    <!-- Left Side -->
+    <div class="hero-content">
+        <span class="badge">&#10022; Creative Frontend Developer</span>
+        
+        <h1 id="main-title" class="hero-title">Building Premium Web Experiences</h1>
+        
+        <p class="hero-description">
+            I create modern websites and digital experiences focused on smooth interactions, 
+            premium UI, and responsive development.
+        </p>
+        
+        <div class="hero-cta" style="margin-top: 50px;">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="hero-image">
+        <img src="images/me.jpg" alt="personal photo" width="380" height="480">
+    </div>
+</section>
+
+<hr>
+
+
+
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <!-- Inline CSS -->
+            <p class="about-subtitle" style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Frontend Developer and Computer Science Graduate</p>
+
+            <div class="about-grid">
+                
+                <article class="about-card">
+                    <h3>Biography</h3>
+                    <p>
+                        Hello! I am Kidest Chombe, a dedicated frontend developer and Computer Science graduate with a strong passion for engineering seamless, interactive, and human-centered web applications.
+                    </p>
+                    <p>
+                        My background combines core computer science principles with modern frontend design. I specialize in turning complex ideas into <strong>clean</strong>, <em>accessible</em>, and high-performance digital experiences with thoughtful user interfaces.
+                    </p>
+                </article>
+
+               <article class="about-card">
+    <h3>Educational Background</h3>
+
+    <p>
+        <strong>New Vision Kindergarten </strong><br>
+        <span>Early childhood education and foundational learning.</span>
+    </p>
+
+    <p>
+        <strong>Sinai Primary School</strong><br>
+        <span>Completed primary-level education and developed basic academic skills.</span>
+    </p>
+
+    <p>
+        <strong>Akaki Adventist School</strong><br>
+        <span>Completed secondary education and prepared for university studies.</span>
+    </p>
+
+    <p>
+        <strong>University of Gondar</strong><br>
+        <time datetime="2022-09">September 2022</time> –
+        <time datetime="2026-06">June 2026</time><br>
+        <span>Bachelor of Science in Computer Science.</span>
+    </p>
+</article>
+
+            
+<article class="about-card">
+    <h3>Experience</h3>
+
+    <div class="experience-item">
+        <h4>Frontend Developer Intern (Ethix)</h4>
+        <span class="experience-meta">
+            <time datetime="2026-04">April 2026</time> &ndash; Present
+        </span>
+        <p>
+            Working on frontend development and website testing,
+            identifying UI/UX issues, improving responsive layouts,
+            and enhancing user experience across web pages.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h4>Website Developer Intern (Development Bank of Ethiopia)</h4>
+        <span class="experience-meta">
+            <time datetime="2025-07">July 2025</time> &ndash;
+            <time datetime="2025-09">September 2025</time>
+        </span>
+        <p>
+            Gained practical experience in web development by
+            working on projects such as a Bank Appointment System,
+            Branch Locator, and Currency Converter using modern
+            frontend technologies and backend API integration.
+        </p>
+    </div>
+</article>
+
+
+              
+<article class="about-card">
+    <h3>Achievements</h3>
+
+    <ul class="about-list">
+        <li>
+            <strong>Very Great Distinction:</strong>
+            Graduated with Very Great Distinction in Bachelor
+            of Science in Computer Science from the University
+            of Gondar.
+        </li>
+
+        <li>
+            <strong>Academic Excellence:</strong>
+            Ranked first among female Computer Science students
+            and second overall in the College of Informatics
+            graduating class.
+        </li>
+
+        <li>
+            <strong>Professional Internship Experience:</strong>
+            Gained practical experience through internships at
+            Development Bank of Ethiopia and Ethix, working on
+            frontend development and website testing.
+        </li>
+
+        <li>
+            <strong>Frontend Development &amp; UI Testing:</strong>
+            Gained hands-on experience improving website layouts,
+            responsiveness, usability, and user interface quality.
+        </li>
+    </ul>
+</article>
+
+
+                <article class="about-card">
+                    <h3>Interests</h3>
+                    <p>
+                        Beyond traditional engineering, I am passionate about exploring the intersection of design, code, and user experience:
+                    </p>
+                    <div class="interests-tags">
+                        <span class="tag">UI/UX Designs</span>
+                        <span class="tag">System Administration and Architecture</span>
+                        <span class="tag">Design Systems</span>
+                        <span class="tag">Algorithmic Challenges</span>
+                        <span class="tag">Open-Source Software</span>
+                       
+                    </div>
+                </article>
+
+                <article class="about-card">
+                    <h3>Career Goals</h3>
+                    <p>
+                        <strong>Short-Term:</strong> Join an innovative, mission-driven software engineering team as a Frontend or Full-Stack Developer, contributing to scalable applications and growing alongside experienced engineers.
+                    </p>
+                    <p>
+                        <strong>Long-Term:</strong> Evolve into a Frontend Architect and Technical Lead, driving design system consistency, web performance standards, and accessibility across large-scale enterprise platforms while actively contributing back to the open-source community.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+       
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>A breakdown of my technical competencies and professional soft skills:</p>
+
+            <div class="skills-tables-grid">
+                <!-- Technical Table -->
+                <div class="table-container">
+                    <table class="skills-table">
+                        <caption>Core technical competencies and proficiency levels</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-group-header">Technical Skills</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Proficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="skill-name"><strong>HTML5 &amp; Semantic Web</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>CSS3, Flexbox &amp; Grid</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>JavaScript</strong></td>
+                                <td><span class="badge-level level-intermediate">Intermediate</span></td>
+                            </tr>
+                             <tr>
+                                <td class="skill-name"><strong>React</strong></td>
+                                <td><span class="badge-level level-intermediate">Intermediate</span></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="skill-name"><strong>Git &amp; GitHub</strong></td>
+                                <td><span class="badge-level level-intermediate">Intermediate</span></td>
+                            </tr>
+                           
+                            <tr>
+                                <td class="skill-name"><strong>Responsive Design</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Soft Table -->
+                <div class="table-container">
+                    <table class="skills-table">
+                        <caption>Professional and interpersonal soft skills</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="table-group-header">Soft Skills</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Proficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="skill-name"><strong>Problem Solving &amp; Logic</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>Communication &amp; Teamwork</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>Time &amp; Sprint Management</strong></td>
+                                <td><span class="badge-level level-proficient">Proficient</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>Adaptability &amp; Quick Learning</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>Attention to UI Detail</strong></td>
+                                <td><span class="badge-level level-advanced">Advanced</span></td>
+                            </tr>
+                            <tr>
+                                <td class="skill-name"><strong>Peer Mentoring &amp; Leadership</strong></td>
+                                <td><span class="badge-level level-intermediate">Intermediate</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <p>A showcase of my major coursework, web applications, and capstone project:</p>
+
+           
+            <div class="final-project-wrapper">
+                <article class="project-card final-project-card">
+                    <div class="project-badge">&#11088; Final Year Capstone Project</div>
+                    <div class="final-project-content">
+                        <figure class="project-figure">
+                            <img src="images/finalyear.png" alt="Final Project Screenshot" width="540" height="300" loading="lazy">
+                            <figcaption>Final Year Capstone Project &mdash; Secure Electronic Voting Solution</figcaption>
+                        </figure>
+                        <div class="project-info">
+                            <dl class="project-details">
+                                <dt>Final Project: E-Voting System</dt>
+                                <dd>
+                                    An end-to-end, secure digital voting platform designed to streamline electoral processes with verifiable audits, role-based access control, and intuitive voter interfaces.
+                                </dd>
+                            </dl>
+                            <div class="project-tech">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Security &amp; Auth</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/bettydes-hub/AI-ASSISTED-ELECTRONIC-VOTING-SYSTEM" target="_blank" rel="noopener" class="btn btn-primary">View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+           
+            <div class="projects-grid">
+                <!-- Project1 -->
+                
+<article class="project-card">
+    <div class="project-badge-sm">Project 01</div>
+
+    <figure class="project-figure">
+        <img src="images/branchlocator.png" alt="Branch Locator application" width="360" height="200" loading="lazy">
+        <figcaption>Bank Branch Locator Web Application</figcaption>
+    </figure>
+
+    <dl class="project-details">
+        <dt>Branch Locator</dt>
+        <dd>
+            Developed a web application that helps users locate bank branches and access branch information. Built an interactive frontend with React and integrated it with a Spring Boot backend to retrieve and display branch data.
+        </dd>
+    </dl>
+
+    <div class="project-tech">
+        <span class="tag">React</span>
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">H2 Database</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/Kidest-Chombe/Branch-Locator"
+           target="_blank" rel="noopener noreferrer"
+           class="project-link">View Repository &rarr;</a>
+    </div>
+</article>
+
+
+                <!-- Project 02 -->
+               
+<article class="project-card">
+    <div class="project-badge-sm">Project 02</div>
+
+    <figure class="project-figure">
+        <img src="images/convertor.png" alt="Currency Converter application" width="360" height="200" loading="lazy">
+        <figcaption>Currency Converter Web Application</figcaption>
+    </figure>
+
+    <dl class="project-details">
+        <dt>Currency Converter</dt>
+        <dd>
+            Developed an interactive currency conversion application that allows users to convert amounts between different currencies. Integrated external currency APIs to retrieve exchange rates and used a Spring Boot backend to handle application requests.
+        </dd>
+    </dl>
+
+    <div class="project-tech">
+        <span class="tag">React</span>
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">External APIs</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/Kidest-Chombe/Currency-Converter"
+           target="_blank" rel="noopener noreferrer"
+           class="project-link">View Repository &rarr;</a>
+    </div>
+</article>
+
+
+                <!-- Project 03 -->
+              
+<article class="project-card">
+    <div class="project-badge-sm">Project 03</div>
+
+    <figure class="project-figure">
+        <img src="images/appointment.png" alt="Bank Appointment System" width="360" height="200" loading="lazy">
+        <figcaption>Bank Appointment Management System</figcaption>
+    </figure>
+
+    <dl class="project-details">
+        <dt>Bank Appointment System</dt>
+        <dd>
+            Developed a web-based appointment management system that allows customers to schedule bank appointments and manage their bookings. Built the frontend using Angular and integrated it with a Node.js and Express.js backend through REST API endpoints.
+        </dd>
+    </dl>
+
+    <div class="project-tech">
+        <span class="tag">Angular</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express.js</span>
+        <span class="tag">REST API</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/Kidest-Chombe/Bank-Appointment"
+           target="_blank" rel="noopener noreferrer"
+           class="project-link">View Repository &rarr;</a>
+    </div>
+</article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <aside id="aside-info" class="highlights-section">
+            <div class="highlights-card-wrapper">
+                <div class="highlights-bottom">
+                    <h3 class="quote-header">Words I Live By</h3>
+                    <blockquote class="highlight-quote">
+                        "Every day is an opportunity to learn something new and become better than yesterday."
+                    </blockquote>
+                    <div class="quote-divider" aria-hidden="true"></div>
+                    <p class="quote-footer note">A personal reminder</p>
+                </div>
+            </div>
+        </aside>
+
+        <hr>
+
+       
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <!-- left -->
+                <div class="contact-info">
+                    <span class="contact-tag"><span class="tag-accent">|</span> CONTACT</span>
+                    <h2 class="contact-heading">Let's make something<br>great together</h2>
+                    <p class="contact-description">
+                        Have a project in mind, a freelance inquiry, or an exciting career opportunity? 
+                        Feel free to reach out and let's start a conversation.
+                    </p>
+
+                
+                    <div class="contact-socials">
+                        <a href="https://web.facebook.com/profile.php?id=100090871873062&sk=followers" class="social-circle social-fb" aria-label="Facebook" title="Facebook">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.325-.597 1.325-1.326V1.326C24 .597 23.405 0 22.675 0z"/></svg>
+                        </a>
+                        <a href="https://x.com/home" class="social-circle social-tw" aria-label="Twitter / X" title="Twitter / X">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kidest-c-a0523331b/" class="social-circle social-li" aria-label="LinkedIn" title="LinkedIn">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="" class="social-circle social-ig" aria-label="Instagram" title="Instagram">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+
+                
+                </div>
+
+                <!-- Right -->
+                <div class="contact-form-card">
+                    <form id="contact-form">
+                        <fieldset>
+                            <legend class="sr-only">Get in Touch Form</legend>
+
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="user-name">First Name *</label>
+                                    <input type="text" id="user-name" name="name" required minlength="2" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-lastname">Last Name</label>
+                                    <input type="text" id="user-lastname" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-email">Email *</label>
+                                <input type="email" id="user-email" name="email" required placeholder="Email Address">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="group-label">Inquiry Nature:</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="inquiry_type" value="job" checked> 
+                                        <span>Job Opportunity</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="inquiry_type" value="freelance"> 
+                                        <span>Freelance Project</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="group-label">Areas of Interest:</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interest" value="frontend" checked> 
+                                        <span>Frontend</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interest" value="mobile"> 
+                                        <span>Mobile</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interest" value="ui"> 
+                                        <span>UI/UX</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="topic-select">Subject</label>
+                                <select id="topic-select" name="topic">
+                                    <option value="general">General Discussion</option>
+                                    <option value="interview">Interview Request</option>
+                                    <option value="collaboration">Open Source Collaboration</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-message">Your Message *</label>
+                                <textarea id="user-message" name="message" rows="4" required minlength="10" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit-modern">Submit Form</button>
+                        </fieldset>
+
+                        <p id="form-feedback" class="form-feedback"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kidest Chombe. All rights reserved.</p>
+        <p>
+            <small>
+                Reach out: 
+                <a href="mailto:kidest@example.com">kidestcho@gmail.com</a> &bull; 
+                <a href="tel:+251911000000">+251 992898830</a>&bull;
+                <a href="https://www.linkedin.com/in/kidest-chombe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            </small>
+        </p>
+    </footer>
+
+    <!-- Internal-JS -->
+    <script>
+        console.log('inside');
+    </script>
+</body>
+</html>
