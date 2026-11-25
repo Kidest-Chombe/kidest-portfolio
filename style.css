@@ -509,6 +509,7 @@ body.dark .final-project-card {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 50px;
+    margin-top: 0;
     margin-bottom: 1.25rem;
 }
 
@@ -523,6 +524,7 @@ body.dark .final-project-card {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 20px;
+    margin-top: 0;
     margin-bottom: 0.75rem;
 }
 
