@@ -1,9 +1,5 @@
 console.log('loaded');
 
-const nameInput = document.querySelector('#user-name');
-const contactForm = document.querySelector('#contact-form');
-const formFeedback = document.querySelector('#form-feedback');
-
 document.addEventListener('keydown', (e) => {
     console.log('Key pressed:', e.key);
 });
